@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    // Incorrectly trying to access element before it's fully parsed
+    document.getElementById("myDiv").style.display = "none"; 
+  </script>
+</body>
+</html>
